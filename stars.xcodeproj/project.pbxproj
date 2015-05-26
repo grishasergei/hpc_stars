@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1C3966BE1B13B99200A288FA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1C3966BD1B13B99200A288FA /* main.c */; };
+		1C3966C71B13B9E100A288FA /* funcs.c in Sources */ = {isa = PBXBuildFile; fileRef = 1C3966C51B13B9E100A288FA /* funcs.c */; };
+		1CE73CB81B149EA80051FDC6 /* quicksort.c in Sources */ = {isa = PBXBuildFile; fileRef = 1CE73CB61B149EA80051FDC6 /* quicksort.c */; };
+		1CE73CBB1B14A1730051FDC6 /* matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 1CE73CB91B14A1730051FDC6 /* matrix.c */; };
+		1CE73CBD1B14A6010051FDC6 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1CE73CBC1B14A6010051FDC6 /* common.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		1C3966BA1B13B99200A288FA /* stars */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = stars; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C3966BD1B13B99200A288FA /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		1C3966C41B13B9E100A288FA /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		1C3966C51B13B9E100A288FA /* funcs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = funcs.c; sourceTree = "<group>"; };
+		1C3966C61B13B9E100A288FA /* funcs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = funcs.h; sourceTree = "<group>"; };
+		1CE73CB61B149EA80051FDC6 /* quicksort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = quicksort.c; sourceTree = "<group>"; };
+		1CE73CB71B149EA80051FDC6 /* quicksort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quicksort.h; sourceTree = "<group>"; };
+		1CE73CB91B14A1730051FDC6 /* matrix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = matrix.c; sourceTree = "<group>"; };
+		1CE73CBA1B14A1730051FDC6 /* matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
+		1CE73CBC1B14A6010051FDC6 /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +69,15 @@
 		1C3966BC1B13B99200A288FA /* stars */ = {
 			isa = PBXGroup;
 			children = (
+				1CE73CB61B149EA80051FDC6 /* quicksort.c */,
+				1CE73CB71B149EA80051FDC6 /* quicksort.h */,
+				1C3966C41B13B9E100A288FA /* common.h */,
+				1CE73CBC1B14A6010051FDC6 /* common.c */,
+				1C3966C51B13B9E100A288FA /* funcs.c */,
+				1C3966C61B13B9E100A288FA /* funcs.h */,
 				1C3966BD1B13B99200A288FA /* main.c */,
+				1CE73CB91B14A1730051FDC6 /* matrix.c */,
+				1CE73CBA1B14A1730051FDC6 /* matrix.h */,
 			);
 			path = stars;
 			sourceTree = "<group>";
@@ -119,6 +139,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C3966BE1B13B99200A288FA /* main.c in Sources */,
+				1CE73CBD1B14A6010051FDC6 /* common.c in Sources */,
+				1C3966C71B13B9E100A288FA /* funcs.c in Sources */,
+				1CE73CBB1B14A1730051FDC6 /* matrix.c in Sources */,
+				1CE73CB81B149EA80051FDC6 /* quicksort.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +226,10 @@
 		1C3966C21B13B99200A288FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_CFLAGS = (
+					"-g",
+					"-O3",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -209,6 +237,10 @@
 		1C3966C31B13B99200A288FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_CFLAGS = (
+					"-g",
+					"-O3",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -232,6 +264,7 @@
 				1C3966C31B13B99200A288FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
